@@ -42,10 +42,12 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.duyts.android.tripbuddy.R
 
 @Composable
 fun SignInScreen(
+	viewModel: SignInViewModel = hiltViewModel(),
 	onSignInSuccess: () -> Unit = {},
 ) {
 	SignInContent(
